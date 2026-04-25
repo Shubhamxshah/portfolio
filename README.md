@@ -1,4 +1,4 @@
-# Sleek Portfolio by ramxcodes
+# Sleek Portfolio by shubhamxshah
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Shadcn UI. Features a blog system, project showcase, work experience timeline, and contact form with Telegram integration.
 
@@ -81,7 +81,7 @@ NEXT_PUBLIC_UMAMI_ID="your-umami-website-id"
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ramxcodes/sleek-portfolio.git
+   git clone https://github.com/shubhamxshah/sleek-portfolio.git
    cd sleek-portfolio
    ```
 

@@ -1,49 +1,61 @@
-import { ArrowRight } from 'lucide-react';
 import { Link } from 'next-view-transitions';
 import React from 'react';
 
 import Container from '../common/Container';
-import SectionHeading from '../common/SectionHeading';
-import Code from '../svgs/Code';
-import Gear from '../svgs/Gear';
-import { Card } from '../ui/card';
 
-const setup = [
+const developmentItems = [
   {
-    name: 'Gears Used',
-    description: 'Productivity Tools, Gears i use to get my work done.',
-    icon: <Gear className="size-4" />,
+    name: 'Gears',
+    description: 'Tools, devices, and software I use to get work done.',
     href: '/gears',
   },
   {
-    name: 'VS Code / Cursor Setup',
-    description: 'VS Code / Cursor Setup i use daily.',
-    icon: <Code className="size-4" />,
+    name: 'Setup',
+    description: 'VSCode / Cursor configuration and extensions guide.',
     href: '/setup',
   },
 ];
 
+const personalItems = [
+  {
+    name: 'Journey',
+    description: 'My learning journey, milestones, and experiences so far.',
+    href: '/journey',
+  },
+];
+
+function ResourceList({
+  items,
+}: {
+  items: { name: string; description: string; href: string }[];
+}) {
+  return (
+    <div className="mt-3 flex flex-col gap-2">
+      {items.map((item) => (
+        <Link
+          key={item.name}
+          href={item.href}
+          className="group border-border hover:bg-muted flex flex-col rounded-lg border px-4 py-3 transition-colors"
+        >
+          <span className="text-sm font-medium">{item.name}</span>
+          <span className="text-secondary text-sm">{item.description}</span>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 export default function Setup() {
   return (
-    <Container className="mt-10">
-      <SectionHeading subHeading="Development" heading="Setup" />
-      <div className="mt-8 flex flex-col gap-4">
-        {setup.map((item) => (
-          <Link className="group" href={item.href} key={item.name}>
-            <Card className="flex flex-row items-center justify-between gap-4 px-4 py-2">
-              <div className="bg-muted flex items-center justify-center rounded-md p-2">
-                {item.icon}
-              </div>
-              <div className="flex w-full flex-col">
-                <h3 className="text-base font-semibold">{item.name}</h3>
-                <p className="text-muted-foreground text-sm">
-                  {item.description}
-                </p>
-              </div>
-              <ArrowRight className="hidden size-4 transition-all duration-300 group-hover:block" />
-            </Card>
-          </Link>
-        ))}
+    <Container className="mt-16">
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold">Development</h2>
+        <ResourceList items={developmentItems} />
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold">Personal</h2>
+        <ResourceList items={personalItems} />
       </div>
     </Container>
   );
