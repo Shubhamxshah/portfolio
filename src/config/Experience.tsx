@@ -107,7 +107,7 @@ export const experiences: Experience[] = [
     isCurrent: false,
     company: 'AppX (YC S21)',
     position: 'Backend & Devops Engineer',
-    location: 'Pune, India',
+    location: 'Delhi, India',
     image: '/',
     description: [
       'Single-handedly engineered and deployed a scalable AI Interview Platform, implementing real-time leaderboard analytics and automated personalized interview feedback system, reducing per-session costs from *$7* to *$0.30*.',
@@ -168,7 +168,7 @@ export const experiences: Experience[] = [
         icon: <Bun />,
       },
     ],
-    website: 'https://appx',
+    website: 'https://appx.co.in',
     github: '#',
   },
   {
