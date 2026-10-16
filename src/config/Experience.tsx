@@ -105,56 +105,17 @@ export const experiences: Experience[] = [
   },
   {
     isCurrent: false,
-    company: 'AnswerThis (YC 25)',
-    position: 'Fullstack AI Engineer',
-    location: 'United States (remote)',
-    image: '/company/answer.png',
-    description: [
-      'Built a RAG-based document retrieval system using vector databases to answer natural-language queries over large PDFs, books, and long-form articles.',
-      'Independently architected and developed end-to-end full-stack solutions for core product features, resulting in 95% cost reduction in AI retrieval. Redesigned the product and improved UI/UX',
-    ],
-    startDate: 'June 2024',
-    endDate: 'Apr 2025',
-    technologies: [
-      {
-        name: 'FastAPI',
-        href: 'https://fastapi.com/',
-        icon: <FastAPI />,
-      },
-      {
-        name: 'Huggingface',
-        href: 'https://www.postman.com/',
-        icon: <HuggingFace />,
-      },
-      {
-        name: 'TypeScript',
-        href: 'https://www.typescriptlang.org/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'Express',
-        href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
-      },
-    ],
-    website: 'https://answerthis.io',
-    github: '#',
-    x: 'https://x.com/answerthis',
-    linkedin: 'https://www.linkedin.com/company/answerthis',
-  },
-  {
-    isCurrent: false,
-    company: 'one2n',
+    company: 'AppX (YC S21)',
     position: 'Backend & Devops Engineer',
     location: 'Pune, India',
-    image: '/company/one2n.png',
+    image: '/',
     description: [
       'Single-handedly engineered and deployed a scalable AI Interview Platform, implementing real-time leaderboard analytics and automated personalized interview feedback system, reducing per-session costs from *$7* to *$0.30*.',
       'Designed and developed a low latency trading platform, distributed microservices, message queues etc and deployed on kubernetes',
       'Engineered a complete Learning Management System (LMS) with an integrated Quiz Platform, featuring progress tracking and performance analytics.',
     ],
-    startDate: 'Oct 2022',
-    endDate: 'Mar 2024',
+    startDate: 'Oct 2024',
+    endDate: 'Apr 2025',
     technologies: [
       {
         name: 'kubernetes',
@@ -207,7 +168,46 @@ export const experiences: Experience[] = [
         icon: <Bun />,
       },
     ],
-    website: 'https://one2n.io',
+    website: 'https://appx',
     github: '#',
+  },
+  {
+    isCurrent: false,
+    company: 'AnswerThis (YC 25)',
+    position: 'Fullstack AI Engineer',
+    location: 'United States (remote)',
+    image: '/company/answer.png',
+    description: [
+      'Built a RAG-based document retrieval system using vector databases to answer natural-language queries over large PDFs, books, and long-form articles.',
+      'Independently architected and developed end-to-end full-stack solutions for core product features, resulting in 95% cost reduction in AI retrieval. Redesigned the product and improved UI/UX',
+    ],
+    startDate: 'June 2024',
+    endDate: 'Oct 2024',
+    technologies: [
+      {
+        name: 'FastAPI',
+        href: 'https://fastapi.com/',
+        icon: <FastAPI />,
+      },
+      {
+        name: 'Huggingface',
+        href: 'https://www.postman.com/',
+        icon: <HuggingFace />,
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://www.typescriptlang.org/',
+        icon: <TypeScript />,
+      },
+      {
+        name: 'Express',
+        href: 'https://expressjs.com/',
+        icon: <ExpressJs />,
+      },
+    ],
+    website: 'https://answerthis.io',
+    github: '#',
+    x: 'https://x.com/answerthis',
+    linkedin: 'https://www.linkedin.com/company/answerthis',
   },
 ];
